@@ -1,0 +1,146 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:100px;
+}
+body{	
+	font-family:微软雅黑,microsoft yahei;
+	font-size:12px;
+	width: 100%;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;	
+}
+.clearfixed:after{
+	content: ".";
+	clear:both;
+	display: block;
+	height: 0px;
+	visibility: hidden; 
+}
+input,textarea{
+	outline: none;
+}
+/*----------------------------头部-------------------------*/
+.y_header{
+	width: 100%;
+	height: 0.4rem;
+	background: #de4943;
+}
+/*-------------------搜索框--------------------------------*/
+.y_search{
+	height: 0.5rem;
+	background: #e2e2e2;
+}
+.y_search1{
+	width:90%;
+	margin: 0 auto;
+	height: 0.3rem;
+	display: flex;
+}
+.y_search1 input{
+	width: 81%;
+	height: 0.3rem;
+	margin: 0.1rem  0 0 0 ;
+	flex: 1 1 auto;
+	border:none;
+	text-indent: 0.1rem;
+}
+.y_search1 a{
+	display: block;
+	width: 0.7rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin: 0.1rem  0 0 0 ;
+	flex: 0 0 auto;
+	background: #de4943;
+	color:#fff;
+}
+/*-----------------------------icon列表---------------------------*/
+.y_wine ul{
+	width: 99.9%;
+	margin: 0 auto;
+}
+.y_wine li{
+	width:33.3% ;
+	float: left;
+	/*background: chartreuse;*/
+	height: 0.8rem;
+	text-align: center;
+	border-right: 1px solid #f6f6f6;
+	border-bottom: 1px solid #f6f6f6;
+}
+.y_wine li:nth-child(3n){
+	border-right: none;
+}
+.y_wine li i{
+	width: 0.36rem;
+    height: 0.36rem;
+    display: block;
+    margin: 0.1rem auto; 
+    background: url(../img/selectIcon.png) no-repeat;
+}
+.y_wine li:first-child i{	  
+    background-position: 3px -296px;   
+}
+.y_wine li:nth-child(2) i{
+	background-position: -77px -296px; 
+}
+.y_wine li:nth-child(3) i{
+	background-position: -162px -296px; 
+}
+.y_wine li:nth-child(4) i{
+	background-position: 3px -368px; 
+}
+.y_wine li:nth-child(5) i{
+	background-position: -77px -368px; 
+}
+.y_wine li:nth-child(6) i{
+	background-position: -167px -368px; 
+}
+.y_wine li:nth-child(7) i{
+	background-position: 1px 1px; 
+}
+.y_wine li:nth-child(8) i{
+	background-position: -84px 1px; 
+}
+.y_wine li:nth-child(9) i{
+	background-position: -162px 1px; 
+}
+.y_wine li:nth-child(10) i{
+	background-position: 0px -70px; 
+}
+.y_wine li:nth-child(11) i{
+	background-position: -84px -70px; 
+}
+.y_wine li:nth-child(12) i{
+	background-position: -165px -72px; 
+}
+.y_wine li:nth-child(13) i{
+	background-position: 0px -139px; 
+}
+.y_wine li:nth-child(14) i{
+	background-position: -84px -139px; 
+}
+.y_wine li:nth-child(15) i{
+	background-position: -165px -139px; 
+}
+.y_wine li:nth-child(16) i{
+	background-position: 0px -217px; 
+}
+.y_wine li:nth-child(17) i{
+	background-position: -84px -217px; 
+}
+.y_wine li:nth-child(18) i{
+	background-position: -165px -217px; 
+}

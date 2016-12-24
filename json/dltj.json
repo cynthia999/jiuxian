@@ -1,0 +1,51 @@
+{
+  "actId": 151149,
+  "topicNum": 5,
+  "list": [],
+  "mobTitle": "爆款特卖",
+  "goodsCate": {
+    "cat_name": "1",
+    "style": "item2-2",
+    "textcolor": "--请选择--",
+    "list": [
+      {
+        "rate": null,
+        "market_price": null,
+        "goods_id": 32468,
+        "goods_name": "法国原瓶进口葡萄酒浪漫情侣套装750ml（2支装）",
+        "goods_thumb": "http://img07.jiuxian.com/2016/1206/069cc034c2d845acb51ea6813f13222e4.jpg",
+        "big": null,
+        "tag_name": null,
+        "middle": null,
+        "small": null,
+        "cur_price": "99",
+        "shop_price": "199",
+        "sub_title": null,
+        "tag_color": null,
+        "headlabel": "热卖",
+        "promotionlabel": null,
+        "showCur_price": true,
+        "inventoryExists": true
+      },
+      {
+        "rate": null,
+        "market_price": null,
+        "goods_id": 32544,
+        "goods_name": "52°五粮液股份A级上品500ml*2+52°飞天不老酒福满天下500ml*2",
+        "goods_thumb": "http://img09.jiuxian.com/2016/1209/fe425760b278458f83e90c714402733e4.jpg",
+        "big": null,
+        "tag_name": null,
+        "middle": null,
+        "small": null,
+        "cur_price": "198",
+        "shop_price": "198",
+        "sub_title": null,
+        "tag_color": null,
+        "headlabel": "热卖",
+        "promotionlabel": null,
+        "showCur_price": false,
+        "inventoryExists": true
+      }
+    ]
+  }
+}

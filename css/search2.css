@@ -1,0 +1,105 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:100px;
+}
+body{	
+	font-family:微软雅黑,microsoft yahei;
+	font-size:12px;
+	width: 100%;
+	background: #616161;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;	
+}
+.clearfixed:after{
+	content: ".";
+	clear:both;
+	display: block;
+	height: 0px;
+	visibility: hidden; 
+}
+input,textarea{
+	outline: none;
+}
+
+/*----------------------------头部-------------------------*/
+.y_header_search2{
+	width: 100%;
+	height: 0.4rem;
+	background: #de4943;
+}
+/*-------------------搜索框--------------------------------*/
+.y_search_search2{
+	height: 0.5rem;
+	background: #e2e2e2;
+}
+.y_search1_search2{
+	width:90%;
+	margin: 0 auto;
+	height: 0.3rem;
+	display: flex;
+}
+.y_search1_search2 input{
+	width: 81%;
+	height: 0.3rem;
+	margin: 0.1rem  0 0 0 ;
+	flex: 1 1 auto;
+	border:none;
+	text-indent: 0.1rem;
+}
+.y_search1_search2 a{
+	display: block;
+	width: 0.7rem;
+	height: 0.3rem;
+	line-height: 0.3rem;
+	text-align: center;
+	margin: 0.1rem  0 0 0 ;
+	flex: 0 0 auto;
+	background: #de4943;
+	color:#fff;
+}
+
+
+/*---------------------热门搜索-------------------------*/
+.y_search2_hot{
+	min-height: 0.8rem;
+	background: #fff;
+	overflow: auto;
+}
+.y_search2_hot h2{
+	float: left;
+	height: 0.8rem;
+	width: 23%;
+	font-weight: normal;
+	font-size:0.14rem;
+	padding: 0.17rem 0 0 8%;
+}
+.y_search2_hot ul{
+	float: left;
+	width: 65%;
+	padding: 0.07rem 0 0 0;
+}
+.y_search2_hot li{
+	float:left;
+	width: auto;
+    height: 0.2rem;
+    line-height: 0.18rem;
+    padding: 0 0.1rem;
+    margin: 0.12rem 0 0 0.1rem;
+    border: 1px solid #c6c6c6;
+    border-radius: 0.02rem;
+    display: block;
+    float: left;
+    position: relative;
+    cursor: pointer;
+}

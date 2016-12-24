@@ -1,0 +1,55 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+}
+html{
+	font-size:100px;
+}
+body{	
+	font-family:微软雅黑,microsoft yahei;
+	font-size:12px;
+	width: 100%;
+}
+a{
+	text-decoration:none;
+}
+ul,ol{
+	list-style:none;
+}
+img{
+	border:none;	
+}
+.clearfixed:after{
+	content: ".";
+	clear:both;
+	display: block;
+	height: 0px;
+	visibility: hidden; 
+}
+input,textarea{
+	outline: none;
+}
+/*----------------头部-------------------*/
+.y_jieri_header{
+	height: 0.4rem;
+	width: 100%;
+	background: #de4943;
+}
+.y_jieri_time{
+	height: 0.33rem;
+	line-height: 0.33rem;
+	background: #fbd640;
+	text-align: center;
+}
+ .y_jieri_time b{
+ 	width: 0.22rem;
+ 	height: 0.18rem;
+ 	background: #000078;
+ 	padding: 0.02rem 0.04rem;
+ 	color:#fbd640 ;
+ }
+ .y_jieri_imglist img{
+ 	width: 100%;
+ 	vertical-align: top;
+ } 

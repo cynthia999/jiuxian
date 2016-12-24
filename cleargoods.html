@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/cleargoods.css"/>
+		<script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+	</head>
+	<body>
+		<div class="y_cleargoods_header"></div>
+		<div class="y_ad"></div>
+<div class="y_cleargoods_main">
+		<div class="y_cleargoods_banner">
+			<img src="http://img08.jiuxian.com/bill/2016/1105/b0384305f7ee4ac2a07464a021a401d9.jpg" alt="" />
+		</div>
+		<!--------------------top排行榜------------------------->
+		<div class="y_cleargoods_list" ng-controller="cleargoods1">
+			<div class="y_cleargoods_item">
+				<img src="http://img10.jiuxian.com/bill/2016/1105/ee06313d3a504cd6a4fde6442992f6cf.jpg" alt="" />
+			</div>	
+				<!--列表项------->
+			<ul>
+				<li>
+					<div class="y_cleargoods_pic">
+						<img src="http://img09.jiuxian.com/2016/0726/580880e2dcf24697ac8439b0b1591f6e4.jpg" alt="" />
+					</div>
+					<p class="y_cleargoods_name">52°酒鬼酝酿-鉴赏500ml</p>
+					<p class="y_cleargoods_empty"></p>
+					<div class="y_cleargoods_price">
+					<p><span>￥158</span><i>￥198</i></p><a href="#">点击购买</a>
+					</div>
+				</li>
+				<li>
+					<div class="y_cleargoods_pic">
+						<img src="http://img10.jiuxian.com/2014/1031/df39f394d6cb433384e882bf7fb1a1d94.jpg" alt="" />
+						<p class="y_cleargoods_saleout">已售罄</p>
+					</div>
+					<p class="y_cleargoods_name">【周末大清仓】53°郑翁孙子兵法酒500ml</p>
+					<p class="y_cleargoods_empty"></p>
+					<div class="y_cleargoods_price">
+					<p><span>￥99</span><i>￥599</i></p><a href="#">点击购买</a>
+					</div>
+				</li>
+				<li ng-repeat="x in items">
+					<div class="y_cleargoods_pic">
+						<img ng-src="{{x.goods_thumb}}" alt="" />
+					</div>
+					<p class="y_cleargoods_name">{{x.goods_name}}</p>	
+					<p class="y_cleargoods_empty"></p>
+					<div class="y_cleargoods_price">
+					<p><span>{{x.cur_price}}</span><i>{{x.shop_price}}</i></p><a href="#">点击购买</a>
+					</div>
+				</li>		
+			</div>
+		<!--</div>-->
+		<div class="y_cleargoods_list" ng-controller="cleargoods2">
+			<div class="y_cleargoods_item">
+				<img src="http://img06.jiuxian.com/bill/2016/1105/57898458dcf74f649ce71d861e07169c.jpg" alt="" />
+			</div>
+			<ul>
+				<li ng-repeat="x in items">
+					<div class="y_cleargoods_pic">
+						<img ng-src="{{x.goods_thumb}}" alt="" />
+					</div>
+					<p class="y_cleargoods_name">{{x.goods_name}}</p>	
+					<p class="y_cleargoods_empty"></p>
+					<div class="y_cleargoods_price">
+					<p><span>{{x.cur_price}}</span><i>{{x.shop_price}}</i></p><a href="#">点击购买</a>
+					</div>
+				</li>		
+			</ul>
+		</div>
+		<div class="y_cleargoods_toTop">
+			<a href="#"><i></i><span>返回<br />顶部</span></a>
+		</div>
+</div>
+		<!--回到顶部-->
+		<script type="text/javascript">
+			$(".y_cleargoods_toTop").on("click",function(){
+				$(document).scrollTop=0;
+			})
+		</script>
+		<script type="text/javascript" src="js/data.js"></script>
+	</body>
+</html>

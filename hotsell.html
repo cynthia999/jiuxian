@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html ng-app="app">
+	<head>
+		<meta charset="UTF-8">
+		<meta name = "viewport" content = "initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+		<title></title>
+		<link rel="stylesheet" href="css/hotsell.css" />
+		<script src="js/jquery-1.11.2.js"></script>
+		<script type="text/javascript" src="js/angular.min.js"></script>
+	</head>
+	<body>
+		<!--爆款特卖-->
+		<div class="y_sell">
+			<img src="http://img07.jiuxian.com/bill/2016/1211/2d07aa0c35f545b5a6b529a6964a1ddd.jpg" alt="" />
+			<img src="http://img06.jiuxian.com/bill/2016/1215/01aab2c33dad48aa968c56d0d5723f2c.jpg" alt="" />
+		</div>
+		<!--爆款top榜-->
+	<div class="y_list" ng-controller="hotsell1">
+			<div class="y_banner">
+			<img src="http://img09.jiuxian.com/bill/2016/1205/accc0021494542b18718354ee700a525.jpg" alt="" />
+			</div>
+			<!--列表项------->
+			<ul>
+				<li ng-repeat="x in items">
+					<div class="y_pic">
+						<img ng-src="{{x.goods_thumb}}" alt="" />
+					</div>
+					<p class="y_name">{{x.goods_name}}</p>
+					<p class="y_empty"></p>
+					<div class="y_price">
+					<p><span>{{x.cur_price}}</span><i>{{x.shop_price}}</i></p><a href="#">点击购买</a>
+					</div>
+				</li>				
+			</ul>
+		</div>
+		<div class="y_toTop">
+			<a href="#"><i></i><span>返回<br />顶部</span></a>
+		</div>
+		<!--回到顶部-->
+		<script type="text/javascript">
+			$(".y_toTop").on("click",function(){
+				$(document).scrollTop=0;
+			})
+		</script>
+		<script type="text/javascript" src="js/data.js"></script>
+	</body>
+</html>
